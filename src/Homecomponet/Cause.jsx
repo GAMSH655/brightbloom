@@ -7,6 +7,7 @@ import {
   FaUsers,
   FaArrowRight,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const causes = [
   {
@@ -53,12 +54,41 @@ const causes = [
   },
 ];
 
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+    },
+  },
+};
+
 const Causes = () => {
   return (
-    <section className="bg-gray-50 py-20">
+    <section className="bg-gray-50 py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center">
+        {/* Heading */}
+        <motion.div
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="max-w-3xl mx-auto text-center"
+        >
           <span className="inline-block bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold">
             What We Do
           </span>
@@ -68,24 +98,45 @@ const Causes = () => {
           </h2>
 
           <p className="mt-6 text-lg text-gray-600 leading-8">
-            We believe sustainable change begins by addressing the most pressing
-            needs of our communities. Our programs focus on creating lasting
-            impact through education, healthcare, empowerment, and humanitarian
-            support.
+            We believe sustainable change begins by addressing the most
+            pressing needs of our communities. Our programs focus on creating
+            lasting impact through education, healthcare, empowerment, and
+            humanitarian support.
           </p>
-        </div>
+        </motion.div>
 
         {/* Cards */}
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
+        >
           {causes.map((cause) => (
-            <div
+            <motion.div
               key={cause.id}
-              className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+              variants={cardVariants}
+              whileHover={{
+                y: -12,
+                scale: 1.03,
+              }}
+              className="group relative overflow-hidden bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-2xl transition"
             >
+              {/* Animated top line */}
+              <span className="absolute top-0 left-0 h-1 w-0 bg-green-700 transition-all duration-500 group-hover:w-full"></span>
+
               {/* Icon */}
-              <div className="w-16 h-16 rounded-xl bg-green-100 text-green-700 flex items-center justify-center text-3xl group-hover:bg-green-700 group-hover:text-white transition-all duration-300">
+              <motion.div
+                whileHover={{
+                  rotate: 360,
+                  scale: 1.15,
+                }}
+                transition={{ duration: 0.6 }}
+                className="w-16 h-16 rounded-xl bg-green-100 text-green-700 flex items-center justify-center text-3xl group-hover:bg-green-700 group-hover:text-white transition-all duration-300"
+              >
                 {cause.icon}
-              </div>
+              </motion.div>
 
               {/* Title */}
               <h3 className="mt-6 text-2xl font-bold text-gray-900">
@@ -98,13 +149,22 @@ const Causes = () => {
               </p>
 
               {/* Button */}
-              <button className="mt-6 flex items-center gap-2 text-green-700 font-semibold group-hover:gap-4 transition-all">
+              <motion.button
+                whileHover={{ x: 8 }}
+                className="mt-6 flex items-center gap-2 text-green-700 font-semibold"
+              >
                 Learn More
-                <FaArrowRight className="text-sm" />
-              </button>
-            </div>
+
+                <motion.div
+                  whileHover={{ x: 5 }}
+                  transition={{ repeat: Infinity, repeatType: "reverse", duration: 0.4 }}
+                >
+                  <FaArrowRight className="text-sm" />
+                </motion.div>
+              </motion.button>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
