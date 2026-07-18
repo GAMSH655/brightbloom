@@ -7,7 +7,6 @@ import Partners from '../Homecomponet/Partners'
 export const Home = () => {
   return (
     <div>
-     
       <Hero/>
       <Causes/>
       <Impact/>
