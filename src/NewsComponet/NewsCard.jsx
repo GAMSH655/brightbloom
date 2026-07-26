@@ -3,14 +3,16 @@ import { Link } from "react-router-dom";
 import { FaArrowRight, FaCalendarAlt } from "react-icons/fa";
 import { client } from "../sanity/client";
 import { urlFor } from "../sanity/image";
-
 const query = `*[_type == "news"] | order(publishedAt desc){
   _id,
   title,
   slug,
   excerpt,
   image,
-  publishedAt
+  publishedAt,
+  author->{
+    name
+  }
 }`;
 
 const NewsCard = () => {
@@ -93,13 +95,13 @@ const NewsCard = () => {
                     {item.excerpt}
                   </p>
 
-                  <Link
-                    to={`/news/${item.slug.current}`}
-                    className="mt-6 inline-flex items-center gap-2 text-pink-600 font-semibold hover:gap-4 transition-all"
-                  >
-                    Read More
-                    <FaArrowRight className="text-sm" />
-                  </Link>
+                 <Link
+                to={`/news/${item.slug?.current}`}
+                  className="mt-6 inline-flex items-center gap-2 text-pink-600 font-semibold hover:gap-4 transition-all"
+                >
+                  Read More
+                  <FaArrowRight className="text-sm" />
+                </Link>
                 </div>
               </div>
             ))}
@@ -107,6 +109,7 @@ const NewsCard = () => {
         )}
       </div>
     </section>
+    
   );
 };
 
