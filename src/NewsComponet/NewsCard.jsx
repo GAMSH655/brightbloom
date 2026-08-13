@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaArrowRight, FaCalendarAlt } from "react-icons/fa";
-import { client } from "../sanity/client";
-import { urlFor } from "../sanity/image";
+import { client } from "../Sanity/client";
+import { urlFor } from "../Sanity/image";
 const query = `*[_type == "news"] | order(publishedAt desc){
   _id,
   title,
