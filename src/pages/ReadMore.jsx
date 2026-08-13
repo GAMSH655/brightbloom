@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { client } from "../Sanity/client";
+import { client } from  "../src/Sanity/client";
 import { urlFor } from "../sanity/image";
 
 const ReadMore = () => {
