@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0B1D17] text-gray-300">
+    <footer className="bg-[#0B1D17] bg-red-300">
       {/* Top Section */}
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
