@@ -125,7 +125,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Programs */}
+          
           <div>
             <h3 className="text-xl font-semibold text-white mb-6">
               Our Programs
@@ -141,7 +141,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact */}
+           
           <div>
             <h3 className="text-xl font-semibold text-white mb-6">
               Contact Us
@@ -159,12 +159,12 @@ const Footer = () => {
 
               <div className="flex gap-4">
                 <FaPhoneAlt className="text-green-400 mt-1" />
-                <p>+234 800 000 0000</p>
+                <p>+234 708 994 1644</p>
               </div>
 
               <div className="flex gap-4">
                 <FaEnvelope className="text-green-400 mt-1" />
-                <p>info@ngofoundation.org</p>
+                <p>christiana.oyeyiola@gmail.com</p>
               </div>
             </div>
           </div>
