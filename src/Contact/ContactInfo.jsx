@@ -11,13 +11,13 @@ const contactDetails = [
     id: 1,
     icon: <FaPhoneAlt />,
     title: "Phone Number",
-    info: "+234 800 123 4567",
+    info: "+234 708 994 1644",
   },
   {
     id: 2,
     icon: <FaEnvelope />,
     title: "Email Address",
-    info: "info@ngofoundation.org",
+    info: "christiana.oyeyiola@gmail.com",
   },
   {
     id: 3,
