@@ -6,6 +6,7 @@ import {
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
+  FaTiktok
 } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
@@ -42,14 +43,14 @@ const Footer = () => {
 
             <div className="flex gap-4 mt-8">
               <a
-                href="#"
+                href="https://www.facebook.com/share/17PWHLcLCY/"
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-green-600 transition flex items-center justify-center"
               >
                 <FaFacebookF />
               </a>
 
               <a
-                href="#"
+                href="https://www.instagram.com/brightbloomgirls_foundation?utm_source=qr&igsh=OTU2aGtsdXFqYXVt"  
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-green-600 transition flex items-center justify-center"
               >
                 <FaInstagram />
@@ -59,7 +60,7 @@ const Footer = () => {
                 href="#"
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-green-600 transition flex items-center justify-center"
               >
-                <FaTwitter />
+                < FaTiktok />
               </a>
 
               <a
