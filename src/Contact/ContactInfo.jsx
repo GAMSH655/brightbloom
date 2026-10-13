@@ -23,7 +23,7 @@ const contactDetails = [
     id: 3,
     icon: <FaMapMarkerAlt />,
     title: "Office Address",
-    info: "123 Charity Avenue, Lagos, Nigeria",
+    info: "4, Alonge Street Akoka Shomolu Lagos Nigeria",
   },
   {
     id: 4,

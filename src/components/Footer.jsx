@@ -57,7 +57,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="#"
+                href="https://www.tiktok.com/@brightbloomgirlsfoundati?_r=1&_t=ZS-9AWP3nK1f8R"
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-green-600 transition flex items-center justify-center"
               >
                 < FaTiktok />
@@ -152,7 +152,7 @@ const Footer = () => {
               <div className="flex gap-4">
                 <FaMapMarkerAlt className="text-green-400 mt-1" />
                 <p>
-                  123 NGO Street,
+                 4, Alonge Street Akoka Shomolu 
                   <br />
                   Lagos, Nigeria
                 </p>
