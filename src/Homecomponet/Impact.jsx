@@ -17,7 +17,7 @@ const impactData = [
   {
     id: 2,
     icon: <FaHandsHelping />,
-    number: "500+",
+    number: "50+",
     title: "Volunteers",
     description:
       "Dedicated volunteers working together to create lasting positive change.",
@@ -25,7 +25,7 @@ const impactData = [
   {
     id: 3,
     icon: <FaGlobeAfrica />,
-    number: "75+",
+    number: "20+",
     title: "Communities Reached",
     description:
       "Expanding our impact across underserved communities every year.",
@@ -51,12 +51,11 @@ const Impact = () => {
           </span>
 
           <h2 className="mt-5 text-4xl md:text-5xl font-bold text-white">
-            Transforming Lives Through Action
+           Every girl child deserves to bloom.
           </h2>
 
           <p className="mt-6 text-green-100 text-lg leading-8">
-            Every project, every volunteer, and every contribution helps us
-            create stronger communities and brighter futures.
+            We are committed to creating a brighter future for every girl child
           </p>
         </div>
 

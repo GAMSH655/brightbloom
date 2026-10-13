@@ -46,15 +46,15 @@ const Partners = () => {
             Our Partners & Sponsors
           </h2>
 
-          <p className="mt-6 text-lg text-gray-600 leading-8">
+          {/* <p className="mt-6 text-lg text-gray-600 leading-8">
             Our work is strengthened through collaborations with organizations,
             businesses, and institutions that share our vision of creating
             lasting positive impact.
-          </p>
+          </p> */}
         </div>
 
-        {/* Logos */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+      
+        {/* <div className="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {partners.map((partner) => (
             <div
               key={partner.id}
@@ -67,7 +67,7 @@ const Partners = () => {
               />
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* CTA */}
         <div className="mt-20 bg-green-700 rounded-3xl p-10 lg:p-14 text-center">

@@ -27,30 +27,30 @@ const causes = [
   {
     id: 3,
     icon: <FaHandsHelping />,
-    title: "Humanitarian Aid",
+    title: "Teenage Pregnancy Prevention",
     description:
-      "Delivering food, clean water, emergency relief, and support to vulnerable families during difficult times.",
+      "Preventing unintended pregnancies among teenage girls through education, counseling, and access to reproductive health services.",
   },
   {
     id: 4,
     icon: <FaLeaf />,
-    title: "Environment",
+    title: "Skills Acquisition ",
     description:
-      "Promoting environmental sustainability through tree planting, sanitation, and climate awareness initiatives.",
+      "Empowering  young girls with vocational training, mentorship, and resources to build sustainable livelihoods.",
   },
   {
     id: 5,
     icon: <FaFemale />,
-    title: "Women Empowerment",
+    title: "Behaviour Change Communication",
     description:
-      "Helping women gain financial independence through skills training, mentorship, and entrepreneurship support.",
+      "Promoting positive social norms, gender equality, and healthy behaviors through community engagement and awareness campaigns.",
   },
   {
     id: 6,
     icon: <FaUsers />,
-    title: "Youth Development",
+    title: "Counselling and Phsycosocial Support",
     description:
-      "Preparing young people for success through leadership development, vocational training, and mentorship programs.",
+      "Providing emotional support, counseling services, and mental health resources to individuals and families in need",
   },
 ];
 

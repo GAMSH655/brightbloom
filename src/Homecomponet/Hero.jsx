@@ -1,14 +1,10 @@
 import { FaArrowRight, FaHandsHelping } from "react-icons/fa";
 import { HiOutlineChevronDown } from "react-icons/hi";
-
 const Hero = () => {
   return (
     <section
-      className="relative min-h-screen bg-cover bg-center flex items-center"
-      style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1800&q=80')",
-      }}
+     className="relative flex min-h-screen items-center bg-cover bg-center bg-no-repeat heroSec"
+      
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/65"></div>
@@ -26,11 +22,11 @@ const Hero = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
-            Creating Hope,
+          <h1 className="text-white text-5xl md:text-6xl lg:text-2xl font-extrabold leading-tight">
+            Empowering the Girl Child
             <br />
             <span className="text-green-400">
-              Changing Lives.
+              Transforming Futures
             </span>
           </h1>
 
