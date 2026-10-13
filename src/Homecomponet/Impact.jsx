@@ -33,7 +33,7 @@ const impactData = [
   {
     id: 4,
     icon: <FaSchool />,
-    number: "150+",
+    number: "20+",
     title: "Projects Completed",
     description:
       "Successfully delivering education, healthcare, and humanitarian initiatives.",
