@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
-
+import Logo from "../images/Logo.jpg"
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Projects", path: "/projects" },
+  // { name: "Projects", path: "/projects" },
   { name: "News", path: "/news" },
-  { name: "Volunteer", path: "/volunteer" },
+  // { name: "Volunteer", path: "/volunteer" },
   { name: "Contact", path: "/contact" },
 ];
 
@@ -18,23 +18,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="flex items-center justify-between h-20">
-
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-            <div className="w-11 h-11 rounded-full bg-green-700 flex items-center justify-center text-white font-bold text-lg">
-              N
-            </div>
-
-            <div>
-              <h2 className="text-xl font-bold text-gray-900">
-                NGO Foundation
-              </h2>
-              <p className="text-xs text-gray-500">
-                Changing Lives Together
-              </p>
-            </div>
-          </Link>
-
+           <img src={Logo} alt="NGO Foundation Logo" className="w-20 h-20" />
           {/* Desktop Menu */}
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((item) => (
