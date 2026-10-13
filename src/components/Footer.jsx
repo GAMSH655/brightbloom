@@ -43,21 +43,21 @@ const Footer = () => {
 
             <div className="flex gap-4 mt-8">
               <a
-                href="https://www.facebook.com/share/17PWHLcLCY/"
+                href="https://www.facebook.com/share/1GK9BRDNHn/"
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-green-600 transition flex items-center justify-center"
               >
                 <FaFacebookF />
               </a>
 
               <a
-                href="https://www.instagram.com/brightbloomgirls_foundation?utm_source=qr&igsh=OTU2aGtsdXFqYXVt"  
+                href="https://instagram.com/brightbloomgirls_foundation?exln=MWxiZDNldDVzMTZwOA%3D%3D"  
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-green-600 transition flex items-center justify-center"
               >
                 <FaInstagram />
               </a>
 
               <a
-                href="https://www.tiktok.com/@brightbloomgirlsfoundati?_r=1&_t=ZS-9AWP3nK1f8R"
+                href="https://www.tiktok.com/@brightbloomgirlsfoundati?_r=1&_t=ZS-9AWTxYhZVWq"
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-green-600 transition flex items-center justify-center"
               >
                 < FaTiktok />

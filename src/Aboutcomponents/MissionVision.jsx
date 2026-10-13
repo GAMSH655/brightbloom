@@ -103,25 +103,33 @@ const MissionVision = () => {
             </h3>
 
             <p className="mt-6 text-green-100 leading-8">
-              To build a world where every individual has equal access to
-              opportunities, essential resources, and the support needed to
-              live a healthy, dignified, and fulfilling life.
+             A world where every girl-child is educated, empowered, and equipped to break the cycle of poverty and become a catalyst for social change.
             </p>
 
             <ul className="mt-8 space-y-4 text-green-100">
               <li className="flex items-center gap-3">
                 <span className="w-2 h-2 rounded-full bg-white"></span>
-                Equal Opportunities for All
+               	Community Engagement and Outreach
               </li>
 
               <li className="flex items-center gap-3">
                 <span className="w-2 h-2 rounded-full bg-white"></span>
-                Sustainable Community Growth
+                School-based and Out-of-School Interventions 
               </li>
 
               <li className="flex items-center gap-3">
                 <span className="w-2 h-2 rounded-full bg-white"></span>
-                Long-Term Positive Impact
+               Strategic Partnerships 
+              </li>
+              
+              <li className="flex items-center gap-3">
+                <span className="w-2 h-2 rounded-full bg-white"></span>
+             High-level Advocacy and Awareness Campaigns 
+              </li>
+             
+              <li className="flex items-center gap-3">
+                <span className="w-2 h-2 rounded-full bg-white"></span>
+              Funding and Resource Mobilisation
               </li>
             </ul>
           </div>
