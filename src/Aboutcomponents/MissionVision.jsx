@@ -36,28 +36,61 @@ const MissionVision = () => {
             </h3>
 
             <p className="mt-6 text-gray-600 leading-8">
-              To improve lives by providing access to quality education,
-              healthcare, humanitarian support, and sustainable development
-              initiatives that empower individuals and communities to thrive.
+              To support out-of-school teenage girls by providing access to formal education, vocational training, mentorship, and advocacy. We also champion peer education and behavioural change initiatives to prevent teenage pregnancy and promote holistic well-being.
             </p>
 
             <ul className="mt-8 space-y-4">
               <li className="flex items-center gap-3">
                 <span className="w-2 h-2 rounded-full bg-green-600"></span>
-                Community Empowerment
+             	Education Access and Support 
               </li>
 
               <li className="flex items-center gap-3">
                 <span className="w-2 h-2 rounded-full bg-green-600"></span>
-                Education & Skills Development
+               	Teenage Pregnancy Prevention
               </li>
 
               <li className="flex items-center gap-3">
                 <span className="w-2 h-2 rounded-full bg-green-600"></span>
-                Humanitarian Assistance
+               	Vocational and Life Skills Training
+              </li>
+
+              <li className="flex items-center gap-3">
+                <span className="w-2 h-2 rounded-full bg-green-600"></span>
+               	Counselling and Psychosocial Support 
+              </li>
+             
+              <li className="flex items-center gap-3">
+                <span className="w-2 h-2 rounded-full bg-green-600"></span>
+              	Mentorship and Leadership Development 
+              </li>
+              
+              <li className="flex items-center gap-3">
+                <span className="w-2 h-2 rounded-full bg-green-600"></span>
+               Health and Well-being Advocacy  
+              </li>
+            
+              <li className="flex items-center gap-3">
+                <span className="w-2 h-2 rounded-full bg-green-600"></span>
+              	Behaviour Change Communication (BCC) .
               </li>
             </ul>
           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           {/* Vision */}
           <div className="group rounded-3xl bg-green-700 p-10 text-white shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
